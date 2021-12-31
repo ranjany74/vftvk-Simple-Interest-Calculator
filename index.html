@@ -3,14 +3,14 @@
     <head>
         <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"></link>
     </head>
     <body>
         <div class='maindiv'>
         <h1>Simple Interest Calculator</h1>
 
         Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="range" id="rate" min='1' max='20' value='default_val', step='0.25'> 
+        Rate <input type="range" onchange="updateRate()" id="rate" min='1' max='20' value='default_val', step='0.25'> 
         <span id='rate_val'>10.25%</span> <br/>
         
         No. of years <select id='years'>
@@ -23,10 +23,10 @@
             <option value='7'>7</option>
             <option value='8'>8</option>
             <option value='9'>9</option>
-            <option value='10'>10</option><br/>
+            <option value='10'>10</option></select><br/>
         Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute Interest</button><br/>
+        <button onclick="compute()">Compute Interest</button><br/><br/><br/>
         <span id='result'> </span>
         <footer>
             &#169; This calculator belongs to Ranjan.
